@@ -78,12 +78,12 @@ elif selected_model=='Decision Tree':
     max_depth=st.sidebar.slider("max_depth",8,16,2)
     model=DecisionTreeRegressor(max_depth=max_depth)
 elif selected_model=='Random Forest':
-    n_estimators=st.slider.sidebar("Num of Trees",100,500,50)  
+    n_estimators=st.sidebar.slider("Num of Trees",100,500,50)
     model=RandomForestRegressor(n_estimators=n_estimators)
 elif selected_model=='Gradient Boosting':
     n_estimators=st.sidebar.slider("Num of Trees",100,500,50)
     model=GradientBoostingRegressor(n_estimators=n_estimators)
-
+        
 # in the brackets(starting count of the slider, max count of the slider, how many steps you want)
 
 
